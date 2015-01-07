@@ -1,0 +1,28 @@
+{
+  "generator-yeogurt": {
+    "config": {
+      "projectName": "parkave-landing",
+      "versionControl": "none",
+      "useServer": false,
+      "singlePageApplication": false,
+      "htmlOption": "html",
+      "jsOption": "none",
+      "cssOption": "sass",
+      "sassSyntax": "scss",
+      "useBourbon": false,
+      "cssFramework": "none",
+      "ieSupport": true,
+      "useGA": true,
+      "jshint": true,
+      "extras": [
+        "useFontAwesome"
+      ],
+      "useJsdoc": false,
+      "useKss": false,
+      "useDashboard": false,
+      "useTesting": false,
+      "useFTP": false
+    },
+    "version": "0.12.3"
+  }
+}
