@@ -562,6 +562,44 @@
 		}
 	}
 
+	/* Notification */
+
+	.notification{
+		display: none;
+		background: #fff;
+		border-radius: $size-radius;
+		margin-top: 20px;
+		height: 40px;
+		line-height: 40px;
+
+		&.success{
+			span, strong {
+				color:$color-success;
+			}
+			&.filled{
+				background-color:$color-success-background;
+			}
+		}
+
+		&.error{
+			span, strong {
+				color:$color-accent2-bg;
+			}
+			&.filled{
+				background-color:$color-accent2-fg-light;
+			}
+		}
+
+		.close {
+			color:$color-accent2-bg;
+			margin-top: 5px;
+			margin-right: 5px;
+			float: right;
+			font-size: 11px;
+			border-bottom: none;
+		}
+	}
+
 /* Box */
 
 	.box {

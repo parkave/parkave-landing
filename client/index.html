@@ -20,7 +20,6 @@
             <link rel="stylesheet" href="/stylle/style-wide.css" />
         </noscript>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -33,11 +32,17 @@
 
         <!-- build:js(client) scripts/global.js -->
         <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="scripts/vendor/jquery.scrollgress.min.js"></script>
+        <script src="scripts/vendor/jquery.scrolly.min.js"></script>
+        <script src="/bower_components/mandrill-api/mandrill.min.js"></script>
         <script src="/bower_components/skel/dist/skel.min.js"></script>
         <!-- endbuild -->
 
         <!-- build:js(client) scripts/app.js -->
             <!-- [injector:js] -->
+            <script src="scripts/vendor/ie7.js"></script>
+            <script src="scripts/vendor/jquery.scrollgress.min.js"></script>
+            <script src="scripts/vendor/jquery.scrolly.min.js"></script>
             <!-- [endinjector] -->
         <script src="/scripts/app.js"></script>
         <!-- endbuild -->
@@ -83,7 +88,7 @@
                 <div class="12u">
                     <ul class="actions">
                         <li><a href="http://app.getparkave.com/login" class="button">Login</a></li>
-                        <li><a class="button">Learn More</a></li>
+                        <li><a a href="#main" class="button scrolly">Learn More</a></li>
                     </ul>
                 </div>
             </div>
@@ -102,7 +107,7 @@
                 
                 <div class="box alt container">
                     <section class="feature left">
-                        <a href="#" class="image icon"><img src="images/webapp.png" alt="" /></a>
+                        <a class="image icon"><img src="images/webapp.png" alt="" /></a>
                         <div class="content">
                             <h3>Sell your lot</h3>
                             <p>Selling your parking spots for a day is easy. Just tell us when it is available, how much you want, and give a quick description of the lot—we will do the rest!</p>
@@ -116,7 +121,7 @@
                         </div>
                     </section>
                     <section class="feature left">
-                        <a href="#" class="image icon fa-mobile"><img src="images/iphone-purchase.png" alt="" /></a>
+                        <a class="image icon"><img src="images/iphone-purchase.png" alt="" /></a>
                         <div class="content">
                             <h3>Reserve your spot</h3>
                             <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
@@ -140,23 +145,37 @@
                 <div class="container 75%">
 
                     <header class="major last">
-                        <h2>Questions or comments?</h2>
+                        <h2>We would love to hear your words about Park Ave.</h2>
                     </header>
 
-                    <p>We would love to hear your words about Park Ave.</p>
+                    <form id="contact_us">
+                         <div class="12u">
+                            <ul class="actions align-center">
+                                <div class="notification success filled">
+                                    <span><strong>Success!</strong> Your message was sent.</span><a href="#" class="close fa fa-times"></a>
+                                </div>
 
-                    <form method="post" action="#">
+                                <div class="notification error filled">
+                                    <span><strong>Something is wrong!</strong> Please double check your email address.</span><a href="#" class="close fa fa-times"></a>
+                                </div>
+                            </ul>
+                        </div>
                         <div class="row">
                             <div class="6u 12u(3)">
-                                <input type="text" name="name" placeholder="Name" />
+                                <input type="text" id="name" name="name" placeholder="Name" />
                             </div>
                             <div class="6u 12u(3)">
-                                <input type="email" name="email" placeholder="Email" />
+                                <input type="email" id="email" name="email" placeholder="Email" required/>
                             </div>
                         </div>
                         <div class="row">
                             <div class="12u">
-                                <textarea name="message" placeholder="Message" rows="6"></textarea>
+                                <input type="text" id="subject" name="subject" placeholder="subject" required></input>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="12u">
+                                <textarea name="message" id="message" placeholder="Message" rows="6" required></textarea>
                             </div>
                         </div>
                         <div class="row">
@@ -175,7 +194,7 @@
                     </ul>
                     
                     <ul class="copyright">
-                        <li>&copy; ParkAve. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        <li>&copy; ParkAve LLC. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                     </ul>
             
                 </div>

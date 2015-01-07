@@ -112,7 +112,9 @@
     ],
     "globals": {
         "$": true,
-        "jQuery": true
+        "jQuery": true,
+        "skel": true,
+        "mandrill": true
     },
     "indent"        : 4         // Specify indentation spacing
 }
