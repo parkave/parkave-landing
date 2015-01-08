@@ -8,7 +8,6 @@ var taskConfig = function(grunt) {
     grunt.config.set('concurrent', {
         compile: [
             'imagemin:dist',
-            'svgmin:dist',
             'sass:dist',
         ]
     });

@@ -33,7 +33,7 @@ var taskConfig = function(grunt) {
                     '*.html',
                     '!*.js',
                     '*.{ico,png,txt}',
-                    'images/**/*.{webp}',
+                    'images/**/*.{webp,svg}',
                     'styles/fonts/**/*.{woff,otf,ttf,eot,svg}'
                 ]
             }]

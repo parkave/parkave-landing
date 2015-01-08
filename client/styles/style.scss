@@ -565,33 +565,28 @@
 	/* Notification */
 
 	.notification{
-		display: none;
-		background: #fff;
+		// display: none;
+		background: $color-accent2-fg-light;
 		border-radius: $size-radius;
 		margin-top: 20px;
 		height: 40px;
 		line-height: 40px;
 
 		&.success{
-			span, strong {
-				color:$color-success;
-			}
-			&.filled{
-				background-color:$color-success-background;
+			strong {
+				color:$color-success !important;
 			}
 		}
 
 		&.error{
-			span, strong {
-				color:$color-accent2-bg;
-			}
-			&.filled{
-				background-color:$color-accent2-fg-light;
+			margin-bottom: 20px;
+			strong {
+				color:red !important;
 			}
 		}
 
 		.close {
-			color:$color-accent2-bg;
+			color:red !important;
 			margin-top: 5px;
 			margin-right: 5px;
 			float: right;
