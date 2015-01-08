@@ -86,9 +86,7 @@ grunt build
 * Not known. 
 
 ##To do
-* Colors of success and error
-* logo top
-* Picture size
+* 
 
 ##License
 [Creative Commons license](http://creativecommons.org/licenses/by/4.0/)

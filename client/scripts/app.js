@@ -37,6 +37,12 @@
 })(jQuery);
 
 $(function(){
+
+    $('.close').click(function(){
+        $('.notification.error').slideUp(300);
+        $('.notification.success').slideUp(300);
+        return false;
+    });
     // Submitting forms
     $('#contact_us').on('submit', function(){
         var error = $('.notification.error');
