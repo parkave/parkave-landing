@@ -1,4 +1,4 @@
-#Park Ave Landing [![Dependency Status](https://david-dm.org//parkave/parkave-landing.svg)](https://david-dm.org/parkave/parkave-landing) [![devDependency Status](https://david-dm.org/parkave/parkave-landing/dev-status.svg)](https://david-dm.org//parkave/parkave-landing#info=devDependencies)
+#Park Ave Landing [![Build Status](https://travis-ci.org/parkave/parkave-landing.svg)](https://travis-ci.org/parkave/parkave-landing) [![Dependency Status](https://david-dm.org//parkave/parkave-landing.svg)](https://david-dm.org/parkave/parkave-landing) [![devDependency Status](https://david-dm.org/parkave/parkave-landing/dev-status.svg)](https://david-dm.org//parkave/parkave-landing#info=devDependencies)
 This is the landing page for Park Ave Product. It has a description and pictures about the product, form for comments.
 
 ##Usage
