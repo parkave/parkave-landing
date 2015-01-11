@@ -82,11 +82,9 @@ grunt build
 	├── templates                   - Templates of HTML files that should not be served
 	└── node_modules                - Contains bower modules
 
-##Potential Bugs:
-* Not known. 
+##[Potential Bugs](https://github.com/parkave/parkave-landing/issues)
 
 ##To do
-* 
 
 ##License
 [Creative Commons license](http://creativecommons.org/licenses/by/4.0/)
