@@ -1,15 +1,15 @@
-#Park Ave Landing [![Build Status](https://travis-ci.org/parkave/parkave-landing.svg)](https://travis-ci.org/parkave/parkave-landing)
+# Park Ave Landing [![Build Status](https://travis-ci.org/parkave/parkave-landing.svg)](https://travis-ci.org/parkave/parkave-landing)
 This is the landing page for Park Ave Product. It has a description and pictures about the product, form for comments.
 
-##Usage
-###Install
+## Usage
+### Install
 To use this script clone this repository on your remote server.
 ```bash
 git clone https://github.com/parkave/parkave-landing.git && cd parkave-landing
 npm install
 bower install
 ```
-###Execution
+### Execution
 To develop
 ```bash
 grunt serve
@@ -23,13 +23,13 @@ To build final product
 grunt build
 ```
 
-##Dependencies
+## Dependencies
 * [node](http://nodejs.org)
 * [npm](https://www.npmjs.com)
 * [bower](https://github.com/bower/bower)
 * [grunt](http://gruntjs.com)
 
-##Structure
+## Structure
     siren-landing
     .
     ├── .editorconfig
@@ -82,9 +82,9 @@ grunt build
     ├── templates                   - Templates of HTML files that should not be served
     └── node_modules                - Contains bower modules
 
-##[Potential Bugs](https://github.com/parkave/parkave-landing/issues)
+## [Potential Bugs](https://github.com/parkave/parkave-landing/issues)
 
-##To do
+## To do
 
-##License
+## License
 [Creative Commons license](http://creativecommons.org/licenses/by/4.0/)
